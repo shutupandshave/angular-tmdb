@@ -5,6 +5,8 @@ I ended up leaning towards that when I started running out of time.
 1,2,5 out of the 5 outputs are done, but I've not done the filtering by rating or genre.  
 I started working on the Genre filtering but it's commented out.
 There's a few tests there but it's not exhaustive, and some are broken because of imports.
+I'd use a reducer with store to filter the last couple of output tasks.  Also I'd like to have written some of this stuff to localstorage automatically using a service.
+
 
 # ZoneTmdbAngular6
 
