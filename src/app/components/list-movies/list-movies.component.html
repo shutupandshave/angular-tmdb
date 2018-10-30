@@ -1,0 +1,19 @@
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+
+<div class="container" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <div *ngFor="let movie of movies.movies, let i = index">
+        <mat-card class="movie-card">
+            <img mat-card-image src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="{{movie.title}}">
+            <mat-card-content class="card-tit">
+                <mat-card-title class="card-tit">{{ movie.title }}</mat-card-title>
+                Rating: {{ movie.vote_average }}
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <mat-paginator [length]="length" [pageIndex]=0 [pageSize]="20" (page)="setActualPage($event)">
+    </mat-paginator>
+</div>
+
+<app-footer></app-footer>
