@@ -1,3 +1,9 @@
+#General notes
+
+I started off trying to be quite lightweight - but I think I should've included a store from the beginning, I ended up leaning towards that when I started running out of time.
+1,2,5 out of the 5 outputs are done, but I've not done the filtering by rating or genre.  I started working on the Genre filtering but it's commented out.
+There's a few tests there but it's not exhaustive, and they're broken (because of imports).
+
 # ZoneTmdbAngular6
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
